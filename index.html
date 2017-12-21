@@ -1,44 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8">
 		<title>Техномарт- интеренет-магазин</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700i&amp;subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="normalize.css" type="text/css">
 		<link rel="stylesheet" href="normalize.css" type="text/css">
+		<link rel="stylesheet" href="style.css" type="text/css">
 	</head>
 	<body>
 		<header class="main-header">
 			<div class="top-header">
-				<div class="container">
-					<div class="main-logo"><a href="">Техномарт</a></div>
-					<form action="#" method="post">
+				<div class="container top-header-flx">
+					<a  class="main-logo" href="">Техномарт</a>
+					<form class="search-header-form" action="#" method="post">
 						<input type="search" placeholder="Поиск" name="search-header" id="search-header">
 						<label for="search-header"></label>
 					</form>
-					<a href="#" class="bockmarks">Закладки: 0</a>
-					<a href="#" class="cart">Корзина: 0</a>
-					<a href="#" class="order">Оформить заказ</a>
+					<a href="#" class="btn-user bockmarks">Закладки: 0</a>
+					<a href="##" class="btn-user cart">Корзина: 0</a>
+					<a href="###" class="btn-user order">Оформить заказ</a>
 				</div>
 			</div>
-			<div class="midden-header">
+			<div class="basic-header">
 				<div class="container">
-					<div class="UTP">
-						<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-					</div>
-					<div class="contacts-header">
-						<div class="tel">
-							<p>+7 (812) 555-05-55</p>
+					<div class="midden-header">
+						<div class="UTP">
+							<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
 						</div>
-						<pc class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+						<div class="contacts-header">
+							<div class="tel">
+								<p>+7 (812) 555-05-55</p>
+							</div>
+							<p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+						</div>
+						<div class="user-block">
+							<a href="#" class="user-btn">Войти</a>
+							<a href="#" class="user-btn">Регистрация</a>
+						</div>
 					</div>
-					<div class="user-block">
-						<a href="#" class="user-btn">Войти</a>
-						<a href="#" class="user-btn">Регистрация</a>
-					</div>
-				</div>
-			</div>
 			<nav class="main-menu">
-				<div class="container">
 					<ul>
 						<li><a href="#">Главная</a></li>
 						<li><a href="#">Компания</a></li>
@@ -48,23 +51,24 @@
 						<li><a href="#">Доставка</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
-				</div>
 			</nav>
+			</div>
+		</div>
 		</header>
 		<main>
 			<div class="container">
 				<nav class="catalog-menu">
 					<section class="catalog-menu-item">
 						<h2>Материалы</h2>
-						<a href="" class="btn-catalog-menu"></a>
+						<a href="#" class="btn-catalog-menu">На любой вкус</a>
 					</section>
 					<section class="catalog-menu-item">
-						<h2>Материалы</h2>
-						<a href="" class="btn-catalog-menu"></a>
+						<h2>Инструмент</h2>
+						<a href="#" class="btn-catalog-menu">На все случаи</a>
 					</section>
 					<section class="catalog-menu-item">
-						<h2>Материалы</h2>
-						<a href="" class="btn-catalog-menu"></a>
+						<h2>Техника</h2>
+						<a href="#" class="btn-catalog-menu">Для стройки</a>
 					</section>
 				</nav>
 				<div class="promo-block">
@@ -73,11 +77,11 @@
 					<h2 class="visualy-hidden">Информация для клиента</h2>
 					<section class="promo-info-item">
 						<h2>Скидки 50%</h2>
-						<a href=""></a>
+						<a href="#">На 350 товаров</a>
 					</section>
 					<section class="promo-info-item">
 						<h2>Доставка</h2>
-						<a href=""></a>
+						<a href="#">Бесплатно</a>
 					</section>
 				</section>
 			</div>
@@ -90,8 +94,8 @@
 					<section class="product-item">
 						<img src="img/snippet-1.jpg" alt="фото Префоратора Bosh BFG 9000">
 						<h2>Перфоратор BOSCH BFG 9000</h2>
-						<p class="old-price"></p>
-						<p class="price"></p>
+						<p class="old-price">32500р.</p>
+						<p class="price">25500р.</p>
 						<div class="product-item-btn">
 							<button class="btn-buy">Купить</button>
 							<button class="btn-boockmarks">В закладки</button>
@@ -100,8 +104,8 @@
 					<section class="product-item">
 						<img src="img/snippet-2.jpg" alt="фото Префоратора Bosh BFG 3000">
 						<h2>Перфоратор BOSCH BFG 3000</h2>
-						<p class="old-price"></p>
-						<p class="price"></p>
+						<p class="old-price">22500р.</p>
+						<p class="price">15500р.</p>
 						<div class="product-item-btn">
 							<button class="btn-buy">Купить</button>
 							<button class="btn-boockmarks">В закладки</button>
@@ -109,9 +113,9 @@
 					</section>
 					<section class="product-item">
 						<img src="img/snippet-3.jpg" alt="фото Префоратора Bosh BFG 6000">
-						<h2>Перфоратор BOSCH BFG</h2>
-						<p class="old-price"></p>
-						<p class="price"></p>
+						<h2>Перфоратор BOSCH BFG 6000</h2>
+						<p class="old-price">30500р.</p>
+						<p class="price">25500р.</p>
 						<div class="product-item-btn">
 							<button class="btn-buy">Купить</button>
 							<button class="btn-boockmarks">В закладки</button>
@@ -119,9 +123,9 @@
 					</section>
 					<section class="product-item">
 						<img src="img/snippet-4.jpg" alt="фото Префоратора Bosh BFG 2000">
-						<h2>Перфоратор BOSCH BFG</h2>
+						<h2>Перфоратор BOSCH BFG 2000</h2>
 						<p class="old-price"></p>
-						<p class="price"></p>
+						<p class="price">12500р.</p>
 						<div class="product-item-btn">
 							<button class="btn-buy">Купить</button>
 							<button class="btn-boockmarks">В закладки</button>
