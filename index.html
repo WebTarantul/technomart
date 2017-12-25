@@ -206,18 +206,19 @@
 					<p>Хороший интернет-магазин отличается от плохого не только ценами!Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 				</div>
 				<div class="service-column">
-					<nav class="menu-services">
-						<form action="">
-						<ul>
-							<li><label for="delivery">Доставка</label></li>
-							<li><label for="guarantee">Гарантия</label></li>
-							<li><label for="credit">Кредит</label></li>
-						</ul>
-						</form>
-					</nav>
 					<input type="radio" name="services" id="delivery" checked="">
 					<input type="radio" name="services" id="guarantee">
 					<input type="radio" name="services" id="credit">
+					<nav class="menu-services">
+						<form action="">
+						<ul>
+							<a href="#"><li><label for="delivery">Доставка</label></li></a>
+							<a href="#"><li><label for="guarantee">Гарантия</label></li></a>
+							<a href="#"><li><label for="credit">Кредит</label></li></a>
+						</ul>
+						</form>
+					</nav>
+					
 					<div class="services-description">
 						<section class="service-item service-item-delivery">
 							<h3>Доставка</h3>
@@ -272,6 +273,33 @@
 				<a href="#" class="btn">Заблудились? НапиШИТЕ НАМ!</a>
 			</section>
 		</article>
+
+		<!--Мадальные окна-->
+<div class="modal-content fadeInUpBig">
+	<div class="modal-form">
+		<button class="close-form">
+		Закрыть
+		</button>
+		<form action="index.html" method="post" id="modal-form">
+			<div class="left-column-modal-form">
+				<label for="modal-name">Ваше имя:</label>
+				<input id="modal-name" type="text" placeholder="Представьтесь, пожалуйста">
+			</div>
+			<div class="right-column-modal-form">
+				<label for="modal-email">Ваш e-mail:</label>
+				<input id="modal-email" type="email" placeholder="Для отправки ответа">
+			</div>
+			<div class="modal-comment-flx">
+				<label for="modal-comment">Текст письма:</label>
+				<textarea id="modal-comment" name="comments" placeholder="В свободной форме"></textarea>
+			</div>
+			<input class="btn" type="submit" value="Отправить">
+		</form>
+	</div>
+	<div class="modal-btn">
+	</div>
+</div>
+</main>
 		<footer class="main-footer">
 			<div class="top-main-footer">
 				<div class="container ftr-columns">
@@ -325,7 +353,6 @@
 				</div>
 			</div>
 		</footer>
-	</main>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>

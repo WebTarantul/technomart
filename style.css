@@ -457,16 +457,16 @@ main{
 	.popular-title,
 	.manufactures-title{
 		background: #f7f3ec;
-		padding: 33px 30px;
+		padding: 23px 30px;
 	}
 	.popular-title b,
 	.manufactures-title b{
 		font-family: "Cuprum","Arial",sans-serif;
 		font-weight: 500;
 		font-size: 30px;
-		line-height: 30px;
 		text-transform: uppercase;
 		color: #32425c;
+		line-height: 40px;
 	}
 .products{
 	display: flex;
@@ -628,6 +628,10 @@ main{
 .popular-manufactures{
 	margin-top: 20px;
 }
+	.manufactures-title{
+		display: flex;
+		justify-content: space-between;
+	}
 	.manufactures{
 		display: flex;
 		flex-wrap: wrap;
@@ -730,7 +734,13 @@ main{
 		border-color: #fff;
 		color: #32425c;
 	}
-	
+	#delivery:checked ~ .menu-services label[for=delivery],
+	#guarantee:checked ~ .menu-services label[for=guarantee],
+	#credit:checked ~ .menu-services label[for=credit]{
+		background: #fff;
+		border-color: #fff;
+		color: #32425c;
+	}
 	.services-description{
 		width: 65.96%;
 	}
@@ -1016,3 +1026,110 @@ input[name="services"]{
 				.yelow-link a:active{
 					color: #ee3643;
 				}
+/*Модальные окна*/
+.modal-content{
+	position:fixed;
+	top:10px;
+	left: 50%;
+	margin-left: -310px;
+	background: #fff;
+	border-top: solid 7px #ee3643;
+	
+	width:620px;
+	box-sizing: border-box;
+	transform: fadeInUpBig;
+
+}
+.modal-form{
+	padding: 40px 80px 0 80px;
+}
+.modal-form form{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+.modal-form input,
+.modal-form textarea{
+	font-size: : 13px;
+	line-height: 16px;
+	padding: 11px 13px;
+	border-radius: 3px;
+	border: 2px solid #d7dcde;
+	box-sizing: border-box;
+}
+.modal-form input[type="text"],
+.modal-form input[type="email"]{
+	width: 220px;
+}
+.modal-form .modal-comment-flx{
+	width: 100%;
+}
+.modal-comment-flx textarea{
+	width: 100%;
+	height: 110px;
+}
+.modal-form label{
+	display: block;
+	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+	margin-bottom: 11px;
+}
+.modal-btn{
+	height: 110px;
+	width: 100%;
+	background: #eee;
+	margin-top: 35px;
+}
+.modal-form input[type="submit"]{
+	position: absolute;
+	bottom: 35px;
+	width: 460px;
+	border-radius:3px;
+}
+.close-form{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	font-size: 0;
+	border: none;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: none
+}
+.close-form::before,
+.close-form::after{
+	content: "";
+	display: block;
+	width: 25px;
+	height: 4px;
+	background: #ee3643;
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	cursor: pointer;
+}
+.close-form::before{
+	transform: rotate(45deg);
+}
+.close-form::after{
+	transform: rotate(-45deg);
+}
+.close-form:hover::before,
+.close-form:hover::after{
+	background: #ba2732;
+}
+@keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
