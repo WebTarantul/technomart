@@ -1,3 +1,4 @@
+
 $('.slider-promo').slick({
 	autoplay:true,dots:true
 });
@@ -30,4 +31,8 @@ close_map.addEventListener("click", function(event){
     event.preventDefault();
     map.classList.remove("show-map");
     modal_ov.classList.remove("modal-show-ov");
+=======
+$('.slider-promo').slick({
+	autoplay:true,dots:true
+>>>>>>> 4206868975f9801db8f3bbd83ddc814ad93bd657
 });
